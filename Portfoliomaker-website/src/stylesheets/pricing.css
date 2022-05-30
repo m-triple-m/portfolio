@@ -1,0 +1,269 @@
+    * {
+        font-family: Roboto, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 40px rgba(14, 30, 37, 0.16);
+        color: rgba(14, 30, 37, 0.8);
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        font-size: 1rem;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+        /* max-width: 23.245em; */
+        padding: 1.618em;
+        position: relative;
+        text-align: left;
+        text-shadow: none;
+        z-index: 10;
+    }
+    
+    .card>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .card header> :first-child,
+    .card> :first-child {
+        margin-top: 0;
+    }
+    
+    .card footer,
+    .card header {
+        color: rgba(14, 30, 37, 0.54);
+    }
+    
+    .card h3 {
+        color: #0e1e25;
+    }
+    
+    .card p {
+        margin-top: 0.382em;
+    }
+    
+    .card footer {
+        margin-top: auto;
+    }
+    
+    .card footer p {
+        margin-top: 1.618em;
+    }
+    
+    .card .button {
+        display: block;
+        width: 100%;
+    }
+    
+    .card li {
+        margin-top: 0.618em;
+        position: relative;
+        text-align: left;
+    }
+    
+    .card li:first-child {
+        margin-top: 0;
+    }
+    
+    .card li::before {
+        background-color: rgba(14, 30, 37, 0.87);
+        border-radius: 50%;
+        color: #fff;
+        content: "✓";
+        display: block;
+        font-size: 0.618em;
+        font-weight: 900;
+        height: 1.618em;
+        left: 0;
+        line-height: 1.75;
+        position: absolute;
+        text-align: center;
+        top: 0.382em;
+        width: 1.618em;
+    }
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.85rem;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1.618;
+        width: auto;
+    }
+    
+    .grid--plans {
+        margin: 2.618em -0.5em;
+    }
+    
+    @media (min-width: 1000px) {
+        .grid--plans {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    
+    @media (min-width: 75em) {
+        .grid--plans {
+            flex-wrap: nowrap;
+        }
+    }
+    
+    .grid--plans .card {
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+        box-sizing: border-box;
+        flex: 1;
+        margin: 0.5em;
+    }
+    
+    .card header> :first-child,
+    .card> :first-child {
+        margin-top: 0;
+    }
+    
+    .card footer,
+    .card header {
+        color: rgba(14, 30, 37, 0.54);
+    }
+    
+    .card>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .card h3 {
+        color: #0e1e25;
+    }
+    
+    .badge {
+        background: #00ad9f;
+        border-radius: 4px;
+        color: #fff;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 600;
+        line-height: 1rem;
+        padding: 0.5em;
+        position: relative;
+        top: -0.1rem;
+        vertical-align: middle;
+    }
+    
+    .grid--plans .bold-price {
+        color: #0e1e25;
+        font-size: 2.618em;
+        font-weight: 500;
+        margin: 0.146em 0 0;
+    }
+    
+    @media (min-width: 32em) {
+        .hero--centered p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card p {
+            margin-top: 0.382em;
+        }
+        h3+p {
+            margin-top: 0.5em;
+        }
+        .grid--plans .card ul {
+            margin-top: 1.618em;
+            padding-left: 0em;
+            list-style: none;
+        }
+        .card>* {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .card li:first-child {
+            margin-top: 0;
+        }
+        .card li {
+            margin-top: 0.618em;
+            padding-left: 1.618em;
+            position: relative;
+            text-align: left;
+        }
+        .card .button {
+            background: #00ad9f;
+            border: 0;
+            border-radius: 4px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            font-family: inherit;
+            font-size: 0.9rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 500;
+            line-height: 1.618em;
+            outline: 0;
+            padding: 0.382em 1em;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.15s ease;
+            vertical-align: middle;
+            z-index: 1;
+        }
+        .tier1 .badge,
+        .tier1 .button,
+        .tier1 li::before {
+            background-color: #00ad9f;
+            color: #fff;
+        }
+        .tier2 .badge,
+        .tier2 .button,
+        .tier2 li::before {
+            background-color: #0051c1;
+            color: #fff;
+        }
+        .tier3 .badge,
+        .tier3 .button,
+        .tier3 li::before {
+            background-color: #9b00f5;
+            color: #fff;
+        }
+        .card li::before {
+            border-radius: 50%;
+            color: #fff;
+            content: "✓";
+            display: block;
+            font-size: 0.618em;
+            font-weight: 900;
+            height: 1.618em;
+            left: 0;
+            line-height: 1.75;
+            position: absolute;
+            text-align: center;
+            top: 0.382em;
+            width: 1.618em;
+        }
+        .grid--plans .card ul {
+            margin-top: 1.618em;
+        }
+        .card>* {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .grid--plans .bold-price small {
+            color: rgba(14, 30, 37, .38);
+            font-size: .5em;
+            font-weight: 400;
+        }
+        @media only screen and (max-width: 1000px) {
+            .grid {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
